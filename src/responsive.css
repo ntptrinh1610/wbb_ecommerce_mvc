@@ -1,0 +1,140 @@
+@import "tailwindcss";
+
+@theme {
+  --color-blue-bg: #235295;
+  --color-arctic-blue-bg: #2bbef9;
+  --color-navy-blue-bg: #233a95;
+  --color-cloud-grey-bg: #f3f4f7;
+  --color-pistachio-green-bg: #e5f8ed;
+  --color-parakeet-green: #16b858;
+  --color-mocha-mousse: #a47764;
+  --color-cannoli-cream: #f0f0e5;
+  --color-cream-tan: #e6c8bb;
+  --color-safari: #bbaa92;
+  --color-sirocco: #c3a089;
+  --color-chanterelle: #a47764;
+  --color-baltic-amber: #8b665c;
+  --color-chocolate-martini: #56453d;
+  --color-tortilla: #9a7b4f;
+  --color-peanut: #795c34;
+  --color-red: #ed174a;
+}
+@media screen and (min-width: 320px) and (max-width: 992px) {
+  html,
+  body {
+    overflow-x: hidden;
+  }
+  .mobileNav a.active button svg,
+  .mobileNav a.active button span {
+    @apply !text-mocha-mousse;
+  }
+
+  .navigation ul {
+    white-space: nowrap;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    display: block !important;
+    text-align: center;
+  }
+
+  .navigation ul::-webkit-scrollbar {
+    display: none !important;
+  }
+  .navigation ul li {
+    display: inline-block !important;
+    vertical-align: top !important;
+  }
+
+  .container {
+    width: 98% !important;
+    max-width: 98% !important;
+  }
+  .scrollableBox {
+    white-space: nowrap;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    display: block !important ;
+  }
+  .scrollableBox::-webkit-scrollbar {
+    display: none;
+  }
+  .scrollableBox .box {
+    display: inline-block !important;
+    vertical-align: top !important;
+    margin-right: 12px !important ;
+  }
+  .scrollableBox .box .info * {
+    white-space: break-spaces !important;
+  }
+  .scrollableBox .col {
+    display: inline-block !important;
+    vertical-align: top !important;
+    margin-right: 12px !important;
+    width: 200px !important ;
+  }
+  .resBannersSlider {
+    white-space: nowrap;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    display: block !important ;
+  }
+  .resBannersSlider::-webkit-scrollbar {
+    display: none;
+  }
+  .resBannersSlider .swiper-slide {
+    white-space: break-spaces !important;
+  }
+  .resBannersSlider .swiper-slide {
+    display: inline-block !important;
+    vertical-align: top !important;
+    margin-right: 12px !important;
+    width: 200px !important ;
+  }
+  .footerBoxWrap {
+    padding-left: 20px !important;
+  }
+  .footerBoxWrap .col {
+    width: 180px !important;
+  }
+  .footerBoxWrap .col p {
+    white-space: wrap;
+  }
+  .sidebarWrapper.open {
+    bottom: 0px !important;
+    opacity: 1 !important;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .scrollable.tabs button {
+    font-size: 13px !important;
+  }
+  .productItem .addToCartBtn {
+    padding: 7px 13px !important ;
+  }
+  .part2_col1 li a,
+  .part2_col2 li a {
+    font-size: 13px !important;
+  }
+  .sidebar {
+    max-height: 100vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+  .sidebar::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 575px) {
+  .cartPanel .MuiPaper-root,
+  .addressPanel .MuiPaper-root {
+    width: 300px !important;
+  }
+}
+@media screen and (min-width: 575px) and (max-width: 767px) {
+  .cartPanel .MuiPaper-root,
+  .addressPanel .MuiPaper-root {
+    width: 400px !important;
+  }
+}
